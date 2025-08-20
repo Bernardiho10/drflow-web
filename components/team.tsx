@@ -1,40 +1,41 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const members = [
     {
         name: 'Liam Brown',
         role: 'Founder - CEO',
-        avatar: 'https://alt.tailus.io/images/team/member-one.webp',
+        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&crop=face',
         link: '#',
     },
     {
         name: 'Elijah Jones',
         role: 'Co-Founder - CTO',
-        avatar: 'https://alt.tailus.io/images/team/member-two.webp',
+        avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=600&fit=crop&crop=face',
         link: '#',
     },
     {
         name: 'Isabella Garcia',
         role: 'Sales Manager',
-        avatar: 'https://alt.tailus.io/images/team/member-three.webp',
+        avatar: 'https://images.unsplash.com/photo-1494790108755-2616c1de9a85?w=400&h=600&fit=crop&crop=face',
         link: '#',
     },
     {
         name: 'Henry Lee',
-        role: 'UX Engeneer',
-        avatar: 'https://alt.tailus.io/images/team/member-four.webp',
+        role: 'UX Engineer',
+        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=600&fit=crop&crop=face',
         link: '#',
     },
     {
         name: 'Ava Williams',
         role: 'Interaction Designer',
-        avatar: 'https://alt.tailus.io/images/team/member-five.webp',
+        avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=600&fit=crop&crop=face',
         link: '#',
     },
     {
         name: 'Olivia Miller',
         role: 'Visual Designer',
-        avatar: 'https://alt.tailus.io/images/team/member-six.webp',
+        avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=600&fit=crop&crop=face',
         link: '#',
     },
 ]
@@ -56,16 +57,22 @@ export default function TeamSection() {
                     <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
                         {members.map((member, index) => (
                             <div key={index} className="group overflow-hidden">
-                                <img className="h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl" src={member.avatar} alt="team member" width="826" height="1239" />
+                                <Image  
+                                    className="h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl" 
+                                    src={member.avatar} 
+                                    alt={`${member.name} - ${member.role}`} 
+                                    width={400} 
+                                    height={600}
+                                    priority={index < 3} // Load first 3 images with priority
+                                />
                                 <div className="px-2 pt-2 sm:pb-0 sm:pt-4">
                                     <div className="flex justify-between">
-                                        <h3 className=" text-base font-medium transition-all duration-500 group-hover:tracking-wider">{member.name}</h3>
+                                        <h3 className="text-base font-medium transition-all duration-500 group-hover:tracking-wider">{member.name}</h3>
                                         <span className="text-xs">_0{index + 1}</span>
                                     </div>
                                     <div className="mt-1 flex items-center justify-between">
                                         <span className="text-muted-foreground inline-block translate-y-6 text-sm opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">{member.role}</span>
                                         <Link href={member.link} className="group-hover:text-primary-600 dark:group-hover:text-primary-400 inline-block translate-y-8 text-sm tracking-wide opacity-0 transition-all duration-500 hover:underline group-hover:translate-y-0 group-hover:opacity-100">
-                                            {' '}
                                             Linktree
                                         </Link>
                                     </div>

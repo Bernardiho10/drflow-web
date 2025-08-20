@@ -16,7 +16,7 @@ Once you decide to sign up, our pricing is extremely affordable and delivers inc
                 <div className="mt-8 grid gap-6 md:mt-20 md:grid-cols-3">
                     <Card className="flex flex-col">
                         <CardHeader>
-                            <CardTitle className="font-medium">Basic Plan</CardTitle>
+                            <CardTitle className="font-medium">Starter Plan</CardTitle>
                             <span className="my-3 block text-2xl font-semibold">$10 / mo</span>
                             <CardDescription className="text-sm">Everything you need to get your practice off the ground!</CardDescription>
                         </CardHeader>
@@ -51,7 +51,7 @@ Once you decide to sign up, our pricing is extremely affordable and delivers inc
 
                         <div className="flex flex-col">
                             <CardHeader>
-                                <CardTitle className="font-medium">Pro Plan</CardTitle>
+                                <CardTitle className="font-medium">Growth Solo Plan</CardTitle>
                                 <span className="my-3 block text-2xl font-semibold">$19 / mo</span>
                                 <CardDescription className="text-sm">Power up your established practice with automations and scope to expand!</CardDescription>
                             </CardHeader>
@@ -82,7 +82,7 @@ Once you decide to sign up, our pricing is extremely affordable and delivers inc
 
                     <Card className="flex flex-col">
                         <CardHeader>
-                            <CardTitle className="font-medium">Team Plan</CardTitle>
+                            <CardTitle className="font-medium">Growth Group Plan</CardTitle>
                             <span className="my-3 block text-2xl font-semibold">$29 / mo</span>
                             <CardDescription className="text-sm">Powerful features for growing health clinics.
 Take your practice to the next level!</CardDescription>

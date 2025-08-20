@@ -19,7 +19,7 @@ const transitionVariants = {
             filter: 'blur(0px)',
             y: 0,
             transition: {
-                type: 'spring',
+                type: 'spring' as const,
                 bounce: 0.3,
                 duration: 1.5,
             },
@@ -59,7 +59,7 @@ export default function HeroSection() {
                                         opacity: 1,
                                         y: 0,
                                         transition: {
-                                            type: 'spring',
+                                            type: 'spring' as const,
                                             bounce: 0.3,
                                             duration: 2,
                                         },
@@ -71,8 +71,8 @@ export default function HeroSection() {
                                 src="https://ik.imagekit.io/lrigu76hy/tailark/night-background.jpg?updatedAt=1745733451120"
                                 alt="background"
                                 className="absolute inset-x-0 top-56 -z-20 hidden lg:top-32 dark:block"
-                                width="3276"
-                                height="4095"
+                                width={3276}
+                                height={4095}
                             />
                         </AnimatedGroup>
                         <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
@@ -113,7 +113,7 @@ export default function HeroSection() {
                                     as="p"
                                     className="mx-auto mt-8 max-w-2xl text-balance text-lg">
 Manage, streamline, and get more done with Drflow, the
-tool for every practitioner’s workflow.                                </TextEffect>
+tool for every practitioner&apos;s workflow.                                </TextEffect>
 
                                 <AnimatedGroup
                                     variants={{
@@ -204,77 +204,77 @@ tool for every practitioner’s workflow.                                </TextE
                         </div>
                         <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-4 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
                             <div className="flex">
-                                <img
+                                <Image
                                     className="mx-auto h-5 w-fit dark:invert"
                                     src="https://html.tailus.io/blocks/customers/nvidia.svg"
                                     alt="Nvidia Logo"
                                     height="20"
-                                    width="auto"
+                                    width={100}
                                 />
                             </div>
 
                             <div className="flex">
-                                <img
+                                <Image
                                     className="mx-auto h-4 w-fit dark:invert"
                                     src="https://html.tailus.io/blocks/customers/column.svg"
                                     alt="Column Logo"
                                     height="16"
-                                    width="auto"
+                                    width={100}
                                 />
                             </div>
                             <div className="flex">
-                                <img
+                                <Image
                                     className="mx-auto h-4 w-fit dark:invert"
                                     src="https://html.tailus.io/blocks/customers/github.svg"
                                     alt="GitHub Logo"
                                     height="16"
-                                    width="auto"
+                                    width={100}
                                 />
                             </div>
                             <div className="flex">
-                                <img
+                                <Image
                                     className="mx-auto h-5 w-fit dark:invert"
                                     src="https://html.tailus.io/blocks/customers/nike.svg"
                                     alt="Nike Logo"
                                     height="20"
-                                    width="auto"
+                                    width={100}
                                 />
                             </div>
                             <div className="flex">
-                                <img
+                                <Image
                                     className="mx-auto h-5 w-fit dark:invert"
                                     src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
                                     alt="Lemon Squeezy Logo"
                                     height="20"
-                                    width="auto"
+                                    width={100}
                                 />
                             </div>
                             <div className="flex">
-                                <img
+                                <Image
                                     className="mx-auto h-4 w-fit dark:invert"
                                     src="https://html.tailus.io/blocks/customers/laravel.svg"
                                     alt="Laravel Logo"
                                     height="16"
-                                    width="auto"
+                                    width={100}
                                 />
                             </div>
                             <div className="flex">
-                                <img
+                                <Image
                                     className="mx-auto h-7 w-fit dark:invert"
                                     src="https://html.tailus.io/blocks/customers/lilly.svg"
                                     alt="Lilly Logo"
                                     height="28"
-                                    width="auto"
+                                    width={100}
                                 />
                             </div>
 
                             <div className="flex">
-                                <img
+                                <Image
                                     className="mx-auto h-6 w-fit dark:invert"
                                     src="https://html.tailus.io/blocks/customers/openai.svg"
                                     alt="OpenAI Logo"
                                     height="24"
-                                    width="auto"
+                                    width={100}
                                 />
                             </div>
                         </div>

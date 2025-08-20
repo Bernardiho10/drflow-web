@@ -54,7 +54,7 @@ export default function FeaturesSection3() {
                                 </span>
                                 <span className="text-muted-foreground text-xs">Sat 22 Feb</span>
                             </div>
-                            <div className="rounded-(--radius) bg-background mt-1.5 w-3/5 border p-3 text-xs">Hey, I'm having trouble with my account.</div>
+                            <div className="rounded-(--radius) bg-background mt-1.5 w-3/5 border p-3 text-xs">Hey, I&apos;m having trouble with my account.</div>
                         </div>
 
                         <div>
